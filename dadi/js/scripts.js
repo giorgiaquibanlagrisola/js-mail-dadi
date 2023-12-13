@@ -8,6 +8,18 @@
 const min = 1;
 const max = 6;
 
-const randomNumber = Math.floor((Math.random() * 6) + 1);
-console.log('randomNumber', randomNumber, typeof randomNumber);
+const numberPlayer = Math.floor((Math.random() * 6) + 1);
+console.log('numberPlayer', numberPlayer, typeof numberPlayer);
 
+const numberComputer = Math.floor((Math.random() * 6) + 1);
+console.log('numberComputer', numberComputer, typeof numberComputer);
+
+if (numberPlayer > numberComputer) {
+    alert('Hai vinto')
+}
+else if (numberComputer > numberPlayer) {
+    alert('Hai perso')
+}
+else (
+    alert('Pareggio')
+)
